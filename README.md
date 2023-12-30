@@ -21,9 +21,9 @@ from usearch.index import Index
 from fast_mm_rag import ClipCppEmbedding, USearchVectorStore
 
 
-client = Index(ndim=512, metric="cos")
-text_store = USearchVectorStore(client=client)
-image_store = USearchVectorStore(client=client)
+usearch_index = Index(ndim=512, metric="cos")
+text_store = USearchVectorStore(usearch_index=usearch_index)
+image_store = USearchVectorStore(usearch_index=usearch_index)
 storage_context = StorageContext.from_defaults(
     vector_store=text_store, image_store=image_store
 )
