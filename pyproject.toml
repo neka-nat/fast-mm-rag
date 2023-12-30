@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "fast-mm-rag"
+version = "0.1.0"
+description = ""
+authors = ["neka-nat <nekanat.stock@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+llama-index = "^0.9.23"
+clip-cpp = "^0.5.0"
+usearch = "^2.8.14"
+pillow = "^10.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
